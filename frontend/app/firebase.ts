@@ -8,13 +8,13 @@ import { getFirestore } from "firebase/firestore";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
- apiKey: "AIzaSyAVd0i_JT7fKWY3wk-6ToRjZVvAwwtrR6w",
- authDomain: "uci-hack-2024.firebaseapp.com",
- projectId: "uci-hack-2024",
- storageBucket: "uci-hack-2024.appspot.com",
- messagingSenderId: "27568726353",
- appId: "1:27568726353:web:e83be2800c5aff49487370",
+const firebaseConfig = { // Everything removed for security. Project is hosted in external server
+ apiKey: "1",
+ authDomain: "1",
+ projectId: "1",
+ storageBucket: "1",
+ messagingSenderId: "13",
+ appId: "1",
 };
 if (!firebase.apps.length) {
  firebase.initializeApp(firebaseConfig);
