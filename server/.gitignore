@@ -1,0 +1,5 @@
+__pycache__/
+.venv/
+service-account.json
+uci-hack-2024-firebase-adminsdk-81ie2-28d5c8fd40.json
+
