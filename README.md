@@ -71,16 +71,7 @@ Install dependencies:
 # Showcase
 
 <div align="center">
-
-  ![Image 1](https://i.ibb.co/HG9HPJ7/image1.jpg)
-  ![Image 2](https://i.ibb.co/YtvLys6/image2.jpg)
-
-</div>
-<div align="center">
-
-  ![Image 3](https://i.ibb.co/Mnr9xP2/image3.jpg)
-  ![Image 4](https://i.ibb.co/7RzW1dk/image4.jpg)
-
+https://github.com/developersbm/InsightfulLantern/assets/122469079/47383e25-86a5-419c-9076-d4c2e1305109
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
