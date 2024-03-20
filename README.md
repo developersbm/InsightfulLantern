@@ -4,6 +4,11 @@
 A project created at IrvineHacks 2024 <br />
 </div>
 
+<!-- USAGE EXAMPLES -->
+# Showcase
+
+https://github.com/developersbm/InsightfulLantern/assets/122469079/47383e25-86a5-419c-9076-d4c2e1305109
+
 <!-- INSPIRATION -->
 ## Inspiration
 We know that many people have their own problems and that having someone to talk to would mean the world to them. However, they avoid speaking about their feelings because of insecurity, anxiety, or fear, and instead, stay silent. This is why we wanted to provide a safe space for users to share their thoughts, advise others, and spread overall positivity. We wanted to create something that would allow users to speak out about their problems without fear of being judged or ridiculed.
@@ -66,16 +71,6 @@ Install dependencies:
   ```sh
   python app.py
   ```
-
-<!-- USAGE EXAMPLES -->
-# Showcase
-
-<div align="center">
-https://github.com/developersbm/InsightfulLantern/assets/122469079/47383e25-86a5-419c-9076-d4c2e1305109
-</div>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTACT -->
 ## Contributors
 
