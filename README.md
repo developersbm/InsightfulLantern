@@ -1,7 +1,7 @@
 # InsightFulLanterns
 <!-- PROJECT LOGO -->
 <div id="readme-top">
-A project created at IrvineHacks 2024 <br />
+A project created at IrvineHacks 2024 <br/>
 </div>
 
 <!-- INSPIRATION -->
