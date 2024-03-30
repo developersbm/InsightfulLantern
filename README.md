@@ -1,141 +1,113 @@
-<div id="readme-top"></div>
+# InsightFulLanterns
+<!-- PROJECT LOGO -->
+<div id="readme-top">
+A project created at IrvineHacks 2024 <br/>
+</div>
 
-# FinanceBuddy (MERN)
+<!-- INSPIRATION -->
+## Inspiration
+We know that many people have their own problems and that having someone to talk to would mean the world to them. However, they avoid speaking about their feelings because of insecurity, anxiety, or fear, and instead, stay silent. This is why we wanted to provide a safe space for users to share their thoughts, advise others, and spread overall positivity. We wanted to create something that would allow users to speak out about their problems without fear of being judged or ridiculed.
 
-## Documentation 
-- <a href="#Authentication">Authentication & Users (Coming Soon)</a>
-- <a href="#Showcase">Showcase</a>
-- <a href="#built-with">Built With</a>
-- <a href="#backend">Backend</a>
-- <a href="#connecting-backend--frontend">Connecting Frontend & Backend</a>
-- <a href="#to-do">To Do</a>
+<!-- USAGE EXAMPLES -->
+# Showcase
 
-<a id="Showcase"></a>
+https://github.com/developersbm/InsightfulLantern/assets/122469079/47383e25-86a5-419c-9076-d4c2e1305109
 
-## Showcase (Main Website)
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-https://github.com/developersbm/FinanceBuddy-FinanceTracker/assets/122469079/24cdcbdd-f8df-45a4-a69c-d53fd185007a
+* The website offers multiple categories for common problems:
+  - Stress from work, school, and family
+  - Advice on relationships, health, and general issues
+* Users choose a category to discuss anonymously
+  - Posts are sent up in flying lanterns
+* Other users can:
+  - Click on lanterns to read and interact
+  - Reply and engage in heartfelt conversations
+  - This is created to strive for a positive environment
+* Implemented using Google Cloud's Natural Language API for moderation
+  - Ensuring a peaceful and judgment-free experience
 
-## Showcase (Stock Predictor)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-https://github.com/developersbm/FinanceBuddy-FinanceTracker/assets/122469079/00e5bde6-435e-48a9-a291-1f3fe0a51282
 
-<a id="built-with"></a>
 
 # Built With
 * [![React][React.com]][React-url] 
-* [![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?logo=mongodb&logoColor=white&style=flat-square)](https://docs.mongodb.com/)
-* [![Node.js](https://img.shields.io/badge/Node.js-green?logo=node.js&logoColor=white&style=flat-square)](https://nodejs.org/)
-* [![Express.js](https://img.shields.io/badge/Express.js-blue?logo=express&logoColor=white&style=flat-square)](https://expressjs.com/)
-* ![Python][Python.com]
+* [![Nextjs][Nextjs.com]][Nextjs-url]
+* [![GoogleCloud][GoogleCloud.com]][GoogleCloud-url]
+* [![Firebase][Firebase.com]][Firebase-url]
+* [![Flask][Flask.com]][Flask-url]
+* [![Python][Python.com]][GoogleCloud-url]
 * [![HTML][HTML.com]][HTML-url]
 * [![CSS][CSS.com]][CSS-url]
 
-
-
-<div id="backend"></div>
-
-## Backend (API, MongoDB & CRUD)
-
-### Connecting Database to MongoDB
-- Importing Mongoose library with an object (ODM), allowing to define schemas, models, and interact with Node.js.
-- Connect your database to the MongoDB URL stored in the hidden .env file.
-- Export the database so it can be used in other modules of the application.
-
-### Income & Expenses (Express Route Handlers)
-
-#### Adding Data to Database (HTTP POST)
-- Parameters (request, response)
-- Destructure title, amount, category, description from req.body
-- Define IncomeSchema including all the requisites
-- Implement Try & Catch for errors:
-    - If title, category, description, date are missing: throw error
-    - Ensure amount is a number
-    - Await income.save() and handle success or error
-
-#### Getting Fetching from Database (HTTP GET)
-- Parameters (request, response)
-- Implement Try & Catch for errors
-- Fetch incomes using IncomeSchema.find().sort({createdAt: -1})
-    - Pattern to fetch records in reverse chronological order, with the most recent ones first.
-
-#### Delete (HTTP DELETE)
-- Parameters (request, response)
-- Extract id parameter
-- Use Mongoose's findByIdAndDelete() based on the id
-    - Handle successful operation with .then()
-    - Catch and handle errors with .catch()
-
-### Transactions
-- Import functions responsible for handling HTTP requests related to expenses/income.
-- Set up Express's Router.
-    - const router = require('express').Router();
-- Export the configured router for use in other parts of the app.
+## Sentiment Analysis API (Google Cloud)
+- We leveraged the power of Google Cloud Platform's (GCP) Sentiment Analysis API to identify and prevent negative or toxic content from being posted by users. 
+## GCP Entities API (Google Cloud)
+- We also used the GCP Entities API to protect the privacy of our users by detecting sensitive information such as names, locations, and contact details.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Starting the server
 
-### Express Setup (Define the Port)
-- Use the middleware for parsing JSON body and add cors to allow request in the frontend URL.
-- Dynamic route mounting
+<!-- GETTING STARTED -->
+## Getting Started
 
-* Allow access to the backend
-```
-cd backend
-npm start
-```
-* Allow access to the frontend
-```
-cd frontend
-npm start
-```
+This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
+
+Install dependencies:
+
+- Make sure you have Python installed on your system.
+
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+* Run the Next.js frontend
+  ```sh
+    npm run dev
+  ```
+* Execute the following command to run the Flask application
+  ```sh
+  python app.py
+  ```
+<!-- CONTACT -->
+## Contributors
+
+Alexander Espejo Github: https://github.com/alexespejo <br><br>
+Kevin Zhang Github: https://github.com/Kevin06x <br><br>
+Sebastian Bastida: https://github.com/developersbm
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+## Documentation
+
+* [Python Documentation](https://docs.python.org/3/)
+* [Flask Documentation](https://flask.palletsprojects.com/en/3.0.x/)
+* [React](https://legacy.reactjs.org/docs/getting-started.html)
+* [Nextjs](https://nextjs.org/docs)
+* [Google Cloud](https://img.shields.io/badge/Google%20Cloud-white?logo=google-cloud&logoColor=4285F4&style=flat-square)
+* [HTML Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS Documentation](https://developer.mozilla.org/enUS/docs/Web/CSS)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<div id="connecting-backend--frontend"></div>
 
-## Connecting Backend & Frontend
-- For this I use the globalContext.js Here I track different functions with the base URL of my backend route.
-- I use the library of axios to POST, GET, DELETE elements.
-
-
-#### addIncome/Expenses
-- Sends an HTTP POST request to the specified URL ${BASE_URL}add-income, including the income data.
-- Sets up an error handling mechanism using .catch() to handle any errors that occur during the request, updating the error state with the error message from the response if an error occurs.
-- Calls the getIncomes() function after the request completes successfully, to fetch and update the list of incomes to reflect the newly added income.
-#### getIncome/Expenses
-- Sends an HTTP GET request to the specified URL ${BASE_URL} get-incomes, including the income data.
-#### deleteIncome/Expenses
-- Sends an HTTP DELETE request to the specified URL ${BASE_URL} delete-income and grabs the id that needs to be deleted.
-- Calls the getIncomes() function after the request completes successfully, to fetch and update the list of incomes to reflect the newly deleted income.
-#### totalIncome/Expenses
-- It iterates over each income entry in the incomes/expenses array using the forEach() method.
-- For each income/expense entry, it adds the amount to the totalIncome variable.
-- After iterating through all income entries, it returns the calculated totalIncome/totalExpenses, representing the sum of all income amounts in the array.
-#### totalBalance
-- For this function I only return the totalIncome() - totalExpenses()
-
-#### transactionHistory
-- Generates a summary of the transaction history by combining income and expense records.
-- Sorting them based on their creation dates in descending order. This is executed by the comparator function that compares 2 transactions a & b by their creation dates.
-- Using splice to return the three most recent transactions.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<div id="to-do"></div>
-
-## To Do
-- User Authentication so that each user has their own FinanceBuddy
-- Stock Predictor model (Already created in Python but has to be translated into React.js)
-- Chat with AI so that it can help you track your income and expenses more effectively
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p
-
+<!-- MARKDOWN LINKS & IMAGES -->
 [Python.com]:https://img.shields.io/badge/Python-blue?logo=python&logoColor=white&style=flat-square
 [Python-url]: https://www.python.org/
+[Flask.com]: https://img.shields.io/badge/FLASK-green?logo=flask&style=flat-square
+[Flask-url]: https://flask.palletsprojects.com/en/3.0.x/
 [HTML.com]: https://img.shields.io/badge/HTML-orange?logo=html5&style=flat-square
 [HTML-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [CSS.com]: https://img.shields.io/badge/CSS-blue?logo=css3&style=flat-square
 [CSS-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [React.com]: https://img.shields.io/badge/React-blue?logo=react&logoColor=white&style=flat-square
 [React-url]: https://legacy.reactjs.org/docs/getting-started.html
+[GoogleCloud.com]: https://img.shields.io/badge/Google%20Cloud-white?logo=google-cloud&logoColor=4285F4&style=flat-square
+[GoogleCloud-url]: https://cloud.google.com/docs
+[Firebase.com]: https://img.shields.io/badge/Firebase-orange?logo=firebase&logoColor=white&style=flat-square
+[Firebase-url]: https://firebase.google.com/docs
+[Nextjs.com]: https://img.shields.io/badge/Next.js-black?logo=next-dot-js&style=flat-square
+[Nextjs-url]: https://nextjs.org/docs
